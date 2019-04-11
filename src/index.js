@@ -7,7 +7,7 @@ socket.on('connect', async() => {
         const hashID = window.location.hash.substring(1);
          socket.emit('hello', { hashID });
          socket.on('stats', (hits) => {
-             document.getElementById('#hitCounts').innerHTML = hits;
+             document.getElementById('hitCounts').innerHTML = hits;
          })
     }
 });
